@@ -38,3 +38,7 @@ main, .accordion-body{
 .card-body{
     background-color: #f2cea215;
 }
+.bg-banner{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bg-home.webp');
+    background-size: cover;
+}

@@ -16,7 +16,7 @@ class MaintenancesTableSeeder extends Seeder
     public function run()
     {
 
-        for ($i = 0; $i < 10; $i++){
+        for ($i = 0; $i < 100; $i++){
             $maintenances = array("Troca de óleo", "Revisão dos Freios", "Troca de escapamento", "Troca dos filtros");
             $progresses = array("pendente", "em andamento", "realizada");
             $date_start = strtotime(date('Y-m-d H:i:s', strtotime(today()."+1 days")));

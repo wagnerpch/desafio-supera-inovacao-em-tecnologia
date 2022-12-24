@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <a href="/"><img src="/img/car-repair.webp" alt="Logo sistema de manuteção veicular"></a>
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />

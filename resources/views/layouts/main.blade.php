@@ -24,8 +24,8 @@
         <header class="container-fluid g-0">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container p-0">
-                    <a class="navbar-brand" href="/">
-                        <!--img src="/img/hdcevents_logo.svg" alt="HDC Events" id="logo" class="rounded"-->
+                    <a class="navbar-brand w-75" href="/">
+                        <img src="/img/car-repair.webp" alt="Logo sistema de manuteção veicular">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>

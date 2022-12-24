@@ -49,20 +49,20 @@
                 <p class="text-center my-2">{{ $car['car_maintenance'] }}</p>
             </div>
             <div class="col-12 col-md-5">
-                <div class="row justify-content-center m-2 text-center">
-                    <div class="col-6 col-lg-5 mb-1">
-                        <a class="btn btn-primary shadow w-100" href="{{ route('cars.show', $car['car_id']) }}">
-                            <ion-icon name="search-outline"></ion-icon>
-                                Consultar
+                <div class="row justify-content-center my-2 mx-1 text-center">
+                    <div class="col-6 col-lg-5 mb-1 p-lg-1">
+                        <a class="btn btn-primary shadow w-100 p-md-2" href="{{ route('cars.show', $car['car_id']) }}">
+                            <ion-icon name='create-outline'></ion-icon>
+                            <small>Consultar</small>
                         </a>
                     </div>
-                    <div class="col-6 col-lg-5 mb-1">
+                    <div class="col-6 col-lg-5 mb-1 p-lg-1">
                         <form action="{{ route('cars.destroy', $car['car_id']) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger shadow w-100">
+                            <button type="submit" class="btn btn-danger shadow w-100 p-md-2">
                                 <ion-icon name='trash-outline'></ion-icon>
-                                    Deletar
+                                <small>Deletar</small>
                             </button>
                         </form>
                     </div>
