@@ -33,18 +33,20 @@ class Controller extends BaseController
             ->orderby('cars.car')
             ->orderby('maintenances.date')
             ->get()->toArray();
-        for ($i = 0; $i < 7; $i++){
+
+        
+        for ($i = 0; $i < 7; $i++) {
             $dados[$i][] = date('d/m/Y', strtotime(today().'+'.($i+1).' days'));
-            foreach($cars as $car){
-                if($car->date == date('Y-m-d H:i:s', strtotime(today().'+'.($i+1).' days'))){
-                    $dados[$i][] = $car;
-                    $maintenance[] = $i;
-                    if($car->progress == 'pendente'){
-                        $progress_toDo[] = $i;
-                    }elseif($car->progress == 'em andamento'){
-                        $progress_doing[] = $i;
+            for ($car = 0; $car < count($cars); $car++) {
+                if(date('Y-m-d', strtotime($cars[$car]->date)) == date('Y-m-d', strtotime(today().'+'.($i+1).' days'))){
+                    $dados[$i][] = $cars[$car];
+                    $maintenance[] += 1;
+                    if($cars[$car]->progress == 'pendente'){
+                        $progress_toDo[] += 1;
+                    }elseif($cars[$car]->progress == 'em andamento'){
+                        $progress_doing[] += 1;
                     }else{
-                        $progress_done[] = $i;
+                        $progress_done[] += 1;
                     }
                 }
             }

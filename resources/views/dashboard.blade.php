@@ -10,7 +10,7 @@
     </div>
 </div>
 <div class="row justify-content-center align-items-center my-4">
-    <div class="col-10 col-md-2">
+    <div class="col-6 col-sm-5 col-md-3">
         <div class="card border-secundary mb-3">
             <div class="card-body">
                 <p class="card-title text-center fs-3 fw-bold">{{isset($maintenance)?count($maintenance):'0'}}</p>
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <div class="col-10 col-md-2">
+    <div class="col-6 col-sm-5 col-md-3">
         <div class="card border-secundary mb-3">
             <div class="card-body">
                 <p class="card-title text-center fs-3 fw-bold">{{isset($progress_toDo)?count($progress_toDo):'0'}}</p>
@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <div class="col-10 col-md-2">
+    <div class="col-6 col-sm-5 col-md-3">
         <div class="card border-secundary mb-3">
             <div class="card-body">
                 <p class="card-title text-center fs-3 fw-bold">{{isset($progress_doing)?count($progress_doing):'0'}}</p>
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <div class="col-10 col-md-2">
+    <div class="col-6 col-sm-5 col-md-3">
         <div class="card border-secundary mb-3">
             <div class="card-body">
                 <p class="card-title text-center fs-3 fw-bold">{{isset($progress_done)?count($progress_done):'0'}}</p>
@@ -51,7 +51,7 @@
                     <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{$i}}" aria-expanded="{{ ($i == 0) ? 'true' : 'false' }}" aria-controls="collapse{{$i}}">
                         <p class="m-0">Manutenções programada para 
                             <strong>
-                                {{ $cars[$i][0]}}
+                                {{ $cars[$i][0] }}
                             </strong>
                         </p>
                     </button>
@@ -64,17 +64,17 @@
                                 <div class="col">
                                     <div class="card shadow">
                                         <div class="card-header text-center">
-                                            <h4 class="card-title my-2">{{ $cars[$i][$o]->maintenance}}</h4>
+                                            <h4 class="card-title my-2">{{ $cars[$i][$o]->maintenance }}</h4>
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title text-center fw-bold mb-3">{{ $cars[$i][$o]->car}}</h5>
-                                            <p class="card-text text-uppercase">Placa: {{ $cars[$i][$o]->license}}</p>
-                                            <p class="card-text">Marca: {{ $cars[$i][$o]->brand}}</p>
-                                            <p class="card-text text-capitalize">Modelo: {{ $cars[$i][$o]->model}}</p>
-                                            <p class="card-text">Versao: {{ $cars[$i][$o]->version}}</p>
+                                            <h5 class="card-title text-center fw-bold mb-3">{{ $cars[$i][$o]->car }}</h5>
+                                            <p class="card-text text-uppercase">Placa: {{ $cars[$i][$o]->license }}</p>
+                                            <p class="card-text">Marca: {{ $cars[$i][$o]->brand }}</p>
+                                            <p class="card-text text-capitalize">Modelo: {{ $cars[$i][$o]->model }}</p>
+                                            <p class="card-text">Versao: {{ $cars[$i][$o]->version }}</p>
                                         </div>
                                         <div class="card-footer">
-                                            <p class="card-text text-center">Situacao: {{ $cars[$i][$o]->progress}}</p>
+                                            <p class="card-text text-center">Situacao: {{ $cars[$i][$o]->progress }}</p>
                                         </div>
                                     </div>
                                 </div>

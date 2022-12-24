@@ -37,7 +37,7 @@
         </div>
     </div>
     @foreach($maintenances as $maintenance)
-        <div class="row justify-content-center m-2 g-0 align-items-center shadow rounded">
+        <div class="row justify-content-center m-2 g-0 align-items-center shadow rounded rows-items">
             <div class="col-1 col-md-1">
                 <p class="text-center my-2">{{ $loop->index + 1 }}</p>
             </div>
@@ -80,8 +80,13 @@
         </div>
     @endforeach
 @else
-    <div class="row justify-content-center m-2 g-0 align-items-center shadow rounded">
-        <p class="text-center fs-5 m-4 p-4">Sem manutenções cadastradas. Se você já cadastrou um carro, <a href="{{ route('maintenances.create') }}"> então aproveite e crie uma manutenção agora</a>.</p>
+    <div class="row justify-content-center g-0 align-items-centerh-50 p-3 p-md-5">
+        <div class="col-10 col-md-6 col-lg-5 m-2 m-md-5 p-md-1">
+            <p class="text-center fs-5 m-4 m-md-5 p-md-5 shadow rounded rows-msg">Sem manutenções cadastradas.</p>
+            <p class="text-center fs-5 m-4 m-md-5 p-md-5 shadow rounded rows-msg"> Se você já cadastrou um carro, 
+                <a href="{{ route('maintenances.create') }}"> então aproveite e crie uma manutenção agora</a>.
+            </p>
+        </div>
     </div>
 @endif
 

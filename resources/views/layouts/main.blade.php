@@ -22,7 +22,7 @@
     </head>
     <body class="container-fluid g-0">
         <header class="container-fluid g-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg ">
                 <div class="container p-0">
                     <a class="navbar-brand" href="/">
                         <!--img src="/img/hdcevents_logo.svg" alt="HDC Events" id="logo" class="rounded"-->
@@ -32,10 +32,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            @auth
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="/dashboard">Dashboard</a>
                             </li>
-                            @auth
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('cars') }}">Carros</a>
                             </li>

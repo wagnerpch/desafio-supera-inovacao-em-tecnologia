@@ -9,25 +9,32 @@ h1{
     color: rgb(51, 51, 0);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.274);
 }
+.navbar, .accordion-button:not(.collapsed){
+    color: black;
+    background-color: #33330020;
+}
 #header-table{
     color: white;
     background-color: rgb(51, 51, 0);
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.274);;
 }
-.accordion-body{
-    background-color: #f2cea230;
+.rows-items, .rows-msg{
+    background-color: white;
+}
+main, .accordion-body{
+    background-color: #f2cea215;
 }
 .accordion-button{
     background-color: #33330005;
 }
 .accordion-button:not(.collapsed){
     color: black;
-    background-color: #33330020;
+    background-color: #33330015;
 }
 .card-header, .card-footer{
-    background-color: #5AA3BF20;
+    background-color: #f2cea235;
 }
 .card-body{
-    background-color: #5AA3BF10;
+    background-color: #f2cea215;
 }

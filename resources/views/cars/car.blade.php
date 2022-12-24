@@ -35,7 +35,7 @@
         </div>
     </div>
     @foreach($cars as $car)
-        <div class="row justify-content-center m-2 g-0 align-items-center shadow rounded">
+        <div class="row justify-content-center m-2 g-0 align-items-center shadow rounded rows-items">
             <div class="col-1 col-md-1">
                 <p class="text-center my-2">{{ $loop->index + 1 }}</p>
             </div>
@@ -71,7 +71,7 @@
         </div>
     @endforeach
 @else
-    <div class="row justify-content-center m-2 g-0 align-items-center shadow rounded">
+    <div class="row justify-content-center m-2 g-0 align-items-center shadow rounded rows-msg">
         <p class="text-center fs-5 m-4 p-4">Sem carros cadastrados, <a href="{{ route('cars.create') }}"> aproveite e crie um agora</a>.</p>
     </div>
 @endif
